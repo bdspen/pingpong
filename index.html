@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<title>Play Ping-Pong! by Ben D. Spenard</title>
+		<link rel="bootstrap" type="text/css" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<h1>Ping-Pong</h1>
+		<p id="instructions">Enter a number. "Ping-Pong" will display every number up to that number. For multiples of three the page displays "Ping" instead of that number. For multiples of five the page will display "Pong". For numbers that are multiples of both three and five, "Ping-Pong" will be shown.</p>
+
+		<form id='ping-pong'>
+			<label for='usernumber'>Your Number:</label>
+		<input type="text" id='usernumber'  placeholder='Enter your number here'>
+		<input type='button' value='Click To Start' onclick="mainfunction()">
+		</form>
+
+		<div>
+			<ul id="results"></ul>
+		</div>
+
+
+	</body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="java.js"></script>
+</html>
